@@ -1,4 +1,11 @@
-ipu6-camera-bins (1) UNRELEASED; urgency=medium
+ipu6-camera-bins (0~git20201126.4bac562-1) UNRELEASED; urgency=medium
+
+  * Intel 20201126 release.
+  * Remove kernel firmware from libipu6.
+
+ -- You-Sheng Yang <vicamo.yang@canonical.com>  Thu, 17 Dec 2020 19:37:03 +0800
+
+ipu6-camera-bins (0~git20201026.72a568a-1) UNRELEASED; urgency=medium
 
   * Initial release.
 
