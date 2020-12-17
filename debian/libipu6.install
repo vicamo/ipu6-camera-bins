@@ -1,2 +1,1 @@
 lib/*.so /usr/lib
-lib/firmware/intel/ipu6_fw.bin /usr/lib/firmware/intel
