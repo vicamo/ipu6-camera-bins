@@ -1,3 +1,23 @@
 #!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+
 %:
 	dh $@
+
+override_dh_install:
+	libdir=debian/tmp/usr/lib/$${DEB_HOST_MULTIARCH}; \
+	mkdir -p $${libdir}/pkgconfig; \
+	install --strip lib/*.so $${libdir}; \
+	for file in lib/*.so; do \
+	  file=$$(basename $${file}); \
+	  ln -s $${file} $${libdir}/$${file}.0; \
+	done; \
+	install lib/*.a $${libdir}; \
+	for pc in lib/pkgconfig/*.pc; do \
+	  cat "$${pc}" | \
+	      sed -e 's,@DEB_HOST_MULTIARCH@,$(DEB_HOST_MULTIARCH),' \
+	      > $${libdir}/pkgconfig/$$(basename $${pc}); \
+	done
+
+	dh_install

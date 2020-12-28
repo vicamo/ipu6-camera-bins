@@ -1,0 +1,50 @@
+From 22718e47094de0a0305c30b66faf7b3266ec83ad Mon Sep 17 00:00:00 2001
+From: You-Sheng Yang <vicamo@gmail.com>
+Date: Mon, 28 Dec 2020 19:32:35 +0800
+Subject: [PATCH] pkgconfig: adopt debian multiarch lib paths
+
+---
+ lib/pkgconfig/ia_imaging.pc | 2 +-
+ lib/pkgconfig/libiacss.pc   | 2 +-
+ lib/pkgconfig/libipu6.pc    | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/lib/pkgconfig/ia_imaging.pc b/lib/pkgconfig/ia_imaging.pc
+index be60913..2245923 100644
+--- a/lib/pkgconfig/ia_imaging.pc
++++ b/lib/pkgconfig/ia_imaging.pc
+@@ -1,6 +1,6 @@
+ prefix=/usr
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/lib
++libdir=${exec_prefix}/lib/@DEB_HOST_MULTIARCH@
+ includedir=${prefix}/include
+ 
+ Name: libia_imaging
+diff --git a/lib/pkgconfig/libiacss.pc b/lib/pkgconfig/libiacss.pc
+index 1fb283b..092efa2 100644
+--- a/lib/pkgconfig/libiacss.pc
++++ b/lib/pkgconfig/libiacss.pc
+@@ -1,6 +1,6 @@
+ prefix=/usr
+ exec_prefix=/usr
+-libdir=/usr/lib/
++libdir=/usr/lib/@DEB_HOST_MULTIARCH@
+ includedir=/usr/include/
+ 
+ Name: libiacss
+diff --git a/lib/pkgconfig/libipu6.pc b/lib/pkgconfig/libipu6.pc
+index 9759d84..83d7e49 100644
+--- a/lib/pkgconfig/libipu6.pc
++++ b/lib/pkgconfig/libipu6.pc
+@@ -1,6 +1,6 @@
+ prefix=/usr
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/lib
++libdir=${exec_prefix}/lib/@DEB_HOST_MULTIARCH@
+ includedir=${prefix}/include
+ 
+ Name: libipu6
+-- 
+2.29.2
+
