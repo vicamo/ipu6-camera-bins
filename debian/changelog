@@ -1,3 +1,14 @@
+ipu6-camera-bins (0~git20201126.4bac562-2) UNRELEASED; urgency=medium
+
+  * lintian: override source error tag source-is-missing
+  * debian: fix multiarch build
+  * lintian: fix copyright-should-refer-to-common-license-file-for-apache-2
+  * lintian: fix extended-description-is-empty
+  * lintian: override lintian errors for shared libraries
+  * debian: let libipu6-dev depends on pkg-config
+
+ -- You-Sheng Yang <vicamo.yang@canonical.com>  Mon, 28 Dec 2020 19:42:46 +0800
+
 ipu6-camera-bins (0~git20201126.4bac562-1) UNRELEASED; urgency=medium
 
   * Intel 20201126 release.
