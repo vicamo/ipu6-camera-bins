@@ -1,0 +1,6 @@
+libipu6: binary-or-shlib-defines-rpath usr/lib/x86_64-linux-gnu/libgcss.so /home/tianshu/yating/ubuntu/camera_repo/camera/out/tgl-ubuntu/install/lib
+libipu6: binary-or-shlib-defines-rpath usr/lib/x86_64-linux-gnu/libia_camera.so /home/tianshu/yating/ubuntu/camera_repo/camera/out/tgl-ubuntu/install/lib
+libipu6: binary-or-shlib-defines-rpath usr/lib/x86_64-linux-gnu/libia_cipf.so /home/tianshu/yating/ubuntu/camera_repo/camera/out/tgl-ubuntu/install/lib
+libipu6: package-name-doesnt-match-sonames libbroxton-ia-pal libgcss0 libia-aiq libia-aiqb-parser libia-camera0 libia-cipf0 libia-cmc-parser libia-coordinate libia-dvs libia-exc libia-isp-bxt libia-lard libia-log libia-ltm libia-mkn libia-nvm
+libipu6: dev-pkg-without-shlib-symlink
+libipu6: shlib-without-versioned-soname
