@@ -14,7 +14,8 @@ Architecture: any
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
-Description: shared libraries for ipu6 camera
+Description: API for Intel IPU6 camera
+ This package contains shared libraries for using Intel IPU6 camera.
 
 Package: libipu6-dev
 Architecture: any
@@ -22,4 +23,6 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
  libipu6 (= ${binary:Version}),
-Description: headers and static library for ipu6 camera
+Description: API for Intel IPU6 camera (development files)
+ This package contains header files and static library for Intel IPU6 camera
+ development.
